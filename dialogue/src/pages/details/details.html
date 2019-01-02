@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title> 
+      <ion-buttons >
+        <button ion-button only-icon class="whatsapppartag"  (click)="regularShare()">
+         <ion-icon class="share-icon" name="share"></ion-icon>
+        </button>
+      </ion-buttons>    
+    </ion-title>   
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  {{post.title}}
+  <img  src="{{post.img}}">
+  <p padding class="content-m"> {{post.des}}</p>
+</ion-content>

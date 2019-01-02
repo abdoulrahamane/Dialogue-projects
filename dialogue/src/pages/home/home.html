@@ -1,0 +1,37 @@
+
+<ion-content >
+    <img src="assets/imgs/logo.png" alt="logo niger contact">
+    <div class="buttons">
+        <div class="airteletmovv">
+           <button class="btn" style="background-color:rgb(207, 0, 0);color:white;font-size: 1.em;" (click)="AirtelPage()">Airtel</button><br><br>
+           <button class="btn" style="background-color:rgb(30, 255, 0);color:#000;font-size: 1.2em;" (click)="MoovPage()">Moov</button><br><br>
+       </div>
+       <div class="nigertetoran">    
+           <button class="btn" style="background-color: #005930;;color:white;font-size: 1em;" (click)="NigerPage()">Niger telecoms</button><br><br>
+           <button class="btn" style="background-color:#ff6600 ;color:white;font-size: 1.2em; " (click)="OrangePage()">Orange</button>
+       </div> 
+       
+       
+   </div>
+       <div class="share">
+      <!-- <button ion-button class="fdepot" navPush="DepotPage" >Faire un depot</button><br><br>-->
+    <!-- <button ion-button class="whatsapp"  (click)="whatsappShare()">
+           <ion-icon class="share-icon" name="logo-whatsapp"></ion-icon>
+     </button>-->
+     <button class="whatsapp1" ion-button navPush="HelpPage" (click)="showInterstitialAd()">  
+        <ion-icon name="logo-whatsapp" ></ion-icon>
+      
+     </button>
+     <button ion-button navPush="AproposPage"  (click)="showInterstitialAd()" class="whatsapp2">
+       <ion-icon  class="share-icon"   name="more"></ion-icon>
+     </button>
+   <button ion-button class="whatsapp3"  (click)="regularShare()">
+       <ion-icon class="share-icon" name="share"></ion-icon>
+   </button>
+   </div>
+   
+   
+   
+   </ion-content>
+   
+   

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="dernierv">
+          <button ion-button menuToggle (click)="onToggleMenu()">
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>Astuce</ion-title>
+  </ion-navbar>
+  </ion-header>
+<ion-content> 
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content>
+      </ion-refresher-content>
+    </ion-refresher>  
+   <!-- <loading-spinner *ngIf="showSpinner"></loading-spinner> <ion-spinner *ngIf="showSpinner"></ion-spinner>-->
+   <ion-spinner class="spinnerCenter" [hidden]="!showSpinner"></ion-spinner>
+    <ion-card  *ngFor="let post of posts"  (click)="thesecondpage($event,post)" > 
+      <img class="mo" src="{{post.img}}"/>
+    <h4>  <div class="card-title">  {{post.title}}</div></h4>  
+    <!--<div class="card-title1">  {{post.des}}</div>-->
+  </ion-card>   
+</ion-content>

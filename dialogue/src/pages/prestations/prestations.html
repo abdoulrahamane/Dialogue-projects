@@ -1,0 +1,52 @@
+<ion-header>
+
+  <ion-navbar color="dernierv">
+    <ion-title>Prestations de service</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <img class="image" [src]="img_html ? img_html : img" alt="Prennez une photo de votre piece" (click)="takepicGalerie()"><br><br>
+    <ion-item>
+      <ion-input type="text" iten-start placeholder="Type de piece" [(ngModel)]="titre"></ion-input>
+    </ion-item><br><br>
+    <ion-list>
+        <ion-item>
+          <ion-label>type de services</ion-label>
+          <ion-select [(ngModel)]="services">
+            <ion-option value="Achatpuce">Achat d'une puce</ion-option>
+            <ion-option value="identification">identification</ion-option>
+            <ion-option value="Grevage">Grevage</ion-option>
+            <ion-option value="Grevage">Achat Routeur</ion-option>
+            <ion-option value="Grevage">Modems</ion-option>
+            <ion-option value="identification">autres services</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-label>Prix</ion-label>
+          <ion-select [(ngModel)]="prix">
+            <ion-option value="prix">500fcfa</ion-option>
+            <ion-option value="identification">500fcfa</ion-option>
+            <ion-option value="Grevage">500fcfa</ion-option>
+            <ion-option value="identification">500fcfa</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-list>
+        <ion-item>
+          <ion-label>Operateur</ion-label>
+          <ion-select [(ngModel)]="Operateur">
+            <ion-option value="Airtel">Airtel</ion-option>
+            <ion-option value="Moov">Moov</ion-option>
+            <ion-option value="NigerTelecoms">Niger Telecoms</ion-option>
+            <ion-option value="Orange">Orange</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list><br><br>
+    <button ion-button class="alis" >Envoyer</button>
+
+</ion-content>

@@ -1,0 +1,164 @@
+<!-- 
+   <p>Minutes gratuites</p>
+  <button ion-item class="bton"  (click)="moovsous1()">forfait 100 f:5MN j</button>
+  <button ion-item class="bton"  (click)="moovsous2()">forfait 250 f:13MN + 13SMS j</button>
+  <button ion-item class="bton"  (click)="moovsous3()">forfait 500 f:30MN+30SMS+30Mo j</button>
+  <button ion-item class="bton"  (click)="moovsous4()">forfait 2000 f:75MN + 75SMS / <br>  semaine </button>
+  <p>Forfaits  tous réseaux</p>
+  <button ion-item class="bton" (click)="moovsous5()">Forfait 500f: 30MN + 15MN en 24h</button>
+  <button ion-item class="bton" (click)="moovsous6()"> 1000f:Forfait illimité + 30MN en <br> 48h</button>
+  <p>Forfaits No limit</p>
+  <button ion-item class="bton" (click)="moovsous7()">Forfait Europe-Amerique-Asie:<br>10MN-1000f en 24h</button>
+  <button ion-item class="bton" (click)="moovsous8()">Forfait Europe-Amerique-Asie:<br>120MN-1000f en 15j</button>
+  <button ion-item class="bton" (click)="moovsous9()">Forfait en Afrique:10MN 2000f j </button>  
+  <button ion-item class="bton" (click)="moovsous10()">Forfait 10 000:60mn 15j </button>
+*515*1*1*4*1#;*515*1*1*3*1#;*515*1*1*2*1#;*515*1*1*1*1#
+*515*2*1*1*1#;*515*2*1*2*1#;*515*3*1*1*1#;*515*3*1*2*1#
+*515*3*1*3*1#;*515*3*1*4*1#
+
+-->
+<div>
+    <div class="decalage" [ngSwitch]="pageName">
+      <div *ngSwitchCase="'button1transcom'">
+          Confirmation
+          <p>Confirmez-vous le transfert de credit du montant de {{btn1}} au numéro {{btn2}} ?</p>
+          <button  (click)="close()" class="non">non</button>
+          <button (click)="callITc()" (click)="close()" class="oui">oui</button>
+      </div>
+     <div *ngSwitchCase="'moovsous1'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 50f ?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*515*1*1*4*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'moovsous2'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 100f ?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*515*1*1*3*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'moovsous3'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 200f ?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*515*1*1*2*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'moovsous4'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 500f  ?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*515*1*1*1*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <!--forfait tous reseau-->
+      <div *ngSwitchCase="'moovsous5'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 500f ?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*515*2*1*1*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'moovsous6'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 1000f?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*515*2*1*2*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <!--forfait no limit-->
+      <div *ngSwitchCase="'moovsous7'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 500f ?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*515*3*1*1*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'moovsous8'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 1000f?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*515*3*1*2*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'moovsous9'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 3000f?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*515*3*1*3*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'moovsous10'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de 5000f?</p>
+          <button  (click)="close()" class="non">non</button>
+          <button (click)="callIT('*515*3*1*4*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <!--moov internet qui est dans moovtransfert
+      <p>Pass jour</p>
+    <button ion-item class="bton" (click)="button2intor()" >Pass jour 100f:20Mo </button>
+    <button ion-item class="bton" (click)="button3intor()">Pass jour 200f:50Mo </button>
+    <p>Pass semaine</p>
+    <button ion-item class="bton" (click)="button4intor()">Pass semaine 500f:200Mo </button>
+    <button ion-item class="bton" (click)="button5intor()" >Pass semaine 1000f:450Mo </button> 
+    <p>Pass mois</p> 
+    <button ion-item class="bton" (click)="button6intor()" >Pass mois 5000f:2.5Go </button>
+    <button ion-item class="bton" (click)="button7intor()">Pass mois 15000f:9Go</button>
+    <button ion-item class="bton" (click)="button8intor()" >Pass mois 30000f:20Go</button>  
+      -->
+      <!--forfait jour
+      *888*1*1*1*2*1#
+      *888*1*1*1*3*1#
+      *888*1*1*2*1*1#
+      *888*1*1*2*2*1#
+      *888*1*1*3*1*1#;*888*1*1*3*2*1#;*888*1*1*3*3*1#
+      -->
+      <div *ngSwitchCase="'moovint1'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait de Pass jour de 200f donnant droit à 75Mo?</p>
+          <button  (click)="close()" class="non">non</button>
+          <button (click)="callIT('*888*1*1*1*2*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'moovint2'">
+          Confirmation
+          <p>Confirmez-vous la souscription au forfait de Pass jour de 500f donnant droit à 400Mo?</p>
+            <button  (click)="close()" class="non">non</button>
+            <button (click)="callIT('*888*1*1*1*3*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <!--forfait smaine-->
+      <div *ngSwitchCase="'moovint3'">
+          Confirmation
+          <p>Confirmez-vous la souscription au forfait de Pass semaine de 500f donnant droit à 300Mo?</p>
+            <button  (click)="close()" class="non">non</button>
+            <button (click)="callIT('*888*1*1*2*1*1#')" (click)="close()" class="oui">oui</button>
+        </div>
+        <div *ngSwitchCase="'moovint4'">
+            Confirmation
+            <p>Confirmez-vous la souscription au forfait de Pass semaine de 1000f donnant droit à 800Mo?</p>
+              <button  (click)="close()" class="non">non</button>
+              <button (click)="callIT('*888*1*1*2*2*1#')" (click)="close()" class="oui">oui</button>
+        </div>
+        <!--forfait mois -->
+        <div *ngSwitchCase="'moovint5'">
+            Confirmation
+            <p>Confirmez-vous la souscription au forfait de Pass mois de 2000f donnant droit à 1Go?</p>
+              <button  (click)="close()" class="non">non</button>
+              <button (click)="callIT('*888*1*1*3*1*1#')" (click)="close()" class="oui">oui</button>
+          </div>
+          <div *ngSwitchCase="'moovint6'">
+              Confirmation
+              <p>Confirmez-vous la souscription au forfait de Pass mois de 5000f donnant droit à 4Go?</p>
+                <button  (click)="close()" class="non">non</button>
+                <button (click)="callIT('*888*1*1*3*2*1#')" (click)="close()" class="oui">oui</button>
+          </div>
+          <div *ngSwitchCase="'moovint7'">
+              Confirmation
+              <p>Confirmez-vous la souscription au forfait de Pass mois de 20 000f donnant droit à 20Go?</p>
+              <button  (click)="close()" class="non">non</button>
+              <button (click)="callIT('*888*1*1*3*3*1#')" (click)="close()" class="oui">oui</button>
+          </div>
+          <div *ngSwitchCase="'sharewettwitter'">
+              <button ion-button  (click)="close()" class="whatsapp3"  (click)="whatsappShare(btn4)">
+                  <ion-icon  name="logo-whatsapp"></ion-icon>
+              </button>
+              <button class="twitter" (click)="close()" class="twitter" ion-button  (click)="twitterShare(btn4)">  
+                <ion-icon name="logo-twitter"  ></ion-icon>  
+             </button>                     
+             <button ion-button navPush="getImage()"></button>
+             
+          </div>
+  
+</div>

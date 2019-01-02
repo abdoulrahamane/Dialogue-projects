@@ -1,0 +1,41 @@
+page-accueil {
+
+    .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated{
+        color: #fff;
+     border-color:#fff;
+       
+    }
+    .segment-md .segment-button{
+        color: #fff;
+        border-color:#fff;
+
+    }
+
+  .swiper-slide { overflow-y: scroll; display: block;}
+  .swiper-slide img{
+    width: 100%!important;
+    max-width: 100%!important;
+    height: 250px!important;
+    max-height: 100%!important;
+  }
+  .card-title{
+   
+    text-align: center;
+font-size: 1.2em;
+  }
+  .spinnerCenter {
+    stroke: #ff0000;
+    fill: #8b0000;
+    position: fixed;
+    z-index: 999;
+    height: 5em;
+    width: em;
+    overflow: show;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+}

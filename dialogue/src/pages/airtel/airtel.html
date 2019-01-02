@@ -1,0 +1,85 @@
+<ion-header>
+    <ion-navbar color="dernierv">
+        <button ion-button menuToggle (click)="onToggleMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Airtel</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="slide">
+  <ion-slides pager="true" parallax="true"  (click)="showInterstitialAd()" >
+    <ion-slide >
+      <img src="assets/imgs/airtel.gif" class="ion-slideimg">
+    </ion-slide>
+    <ion-slide  >
+      <img src="assets/imgs/air1.jpg" class="ion-slideimg" >
+    </ion-slide>
+  </ion-slides>
+</div>
+<ion-list>
+  <button ion-item (click)="AirtelcomptePage()">
+    <ion-avatar item-start>
+      <img src="assets/imgs/compte.png">
+    </ion-avatar>
+    <h2 class="h80">Mon Compte</h2>
+   <!-- <audio class="au" src="assets/audio.3gpp"autoplays controls></audio>-->
+    <h3 class="h80">je gere mon compte </h3>
+  
+  </button>
+  <button ion-item navPush="AirtelsouscPage">
+    <ion-avatar item-start>
+      <img src="assets/imgs/souscription.png">
+    </ion-avatar>
+    <h2 class="h80">Forfait</h2>
+    <h3 class="h80">mon forfait et moi </h3>
+  </button>
+  <button ion-item navPush="AirtelmoneyPage">
+    <ion-avatar item-start>
+      <img src="assets/imgs/c.png">
+    </ion-avatar>
+    <h2 class="h80">MKoudi</h2>
+    <h3 class="h80">Garant de ma securité </h3>
+    </button>
+    <button ion-item navPush="AirtelinternetPage">
+      <ion-avatar item-start>
+        <img src="assets/imgs/internet.png">
+      </ion-avatar>
+      <h2 class="h80">Internet</h2>
+      <h3 class="h80">j'aime etre connecté</h3>
+  </button>
+</ion-list>
+  <!--  <ion-card (click)="AirtelcomptePage()">
+        <img src="assets/imgs/compte.png" style="width: 80%;height: 50%;margin: 10%;" >
+        <ion-card-content>
+          <p>
+         Compte
+          </p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card class="card-title" navPush="AirtelsouscPage">
+        <img src="assets/imgs/souscription.png" style="width: 80%;height: 50%;margin: 10%;" >
+        <ion-card-content>
+          <p>
+         Forfait
+          </p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card  navPush="AirtelmoneyPage">
+        <img src="assets/imgs/c.png" style="width: 80%;height: 50%;margin: 10%;" >
+        <ion-card-content>
+          <p>
+         MKoudi
+          </p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card  navPush="AirtelinternetPage">
+        <img src="assets/imgs/internet.png" style="width: 80%;height: 50%;margin: 10%;" >
+        <ion-card-content>
+          <p>
+         Internet
+          </p>
+        </ion-card-content>
+    </ion-card>-->
+   
+ </ion-content>

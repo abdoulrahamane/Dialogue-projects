@@ -1,0 +1,30 @@
+<!--
+  Generated template for the AirteltransfertPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dernierv">
+    <ion-title>Transfert</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="deplace container">
+  <audio controls src=""></audio>
+        <ion-label>Numero</ion-label>
+        <ion-input type="number" class="border"  [(ngModel)] ="phoneNumber"></ion-input><br>
+      <br>
+      <audio controls src=""></audio>
+        <ion-label>confirmation du numero</ion-label>
+        <ion-input type="number" class="border"  [(ngModel)] ="phoneNumber1"></ion-input>
+     <br>
+     <audio controls src=""></audio>
+          <ion-label >solde</ion-label>
+          <ion-input type="number" class="border" [(ngModel)] ="phoneNumber2"></ion-input>
+     <br>
+     <audio controls src=""></audio>
+            <ion-label >code </ion-label>
+            <ion-input type="password" class="border"  [(ngModel)] ="phoneNumber3"></ion-input>
+       <br><br><br>
+        <button ion-button round outline class="decalage"  (click)="airteltransfert()">Valider</button>
+</ion-content>

@@ -1,0 +1,95 @@
+<!--
+  Generated template for the OrangePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="dernierv">
+        <button ion-button menuToggle (click)="onToggleMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Orange</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content >
+    <div class="slide">
+        <ion-slides pager="true" parallax="true"(click)="showInterstitialAd()" >
+          <ion-slide class="ion-slideimg" >
+            <img src="assets/imgs/oransn.png" class="ion-slideimg" >
+          </ion-slide>
+          <ion-slide >
+            <img src="assets/imgs/orang.jpg" class="ion-slideimg">
+          </ion-slide>
+        </ion-slides>
+      </div>
+      <ion-list>
+        <button ion-item  navPush="CompteorangePage">
+          <ion-avatar item-start>
+            <img src="assets/imgs/compte.png">
+          </ion-avatar>
+          <h2 class="h80">Mon Compte</h2>
+          <h3 class="h80">je gere mon compte </h3>
+        </button>
+        <button ion-item navPush="SouscriptionorangePage">
+          <ion-avatar item-start>
+            <img src="assets/imgs/souscription.png">
+          </ion-avatar>
+          <h2 class="h80">Forfait</h2>
+          <h3 class="h80">mon forfait et moi </h3>
+        </button>
+        <button ion-item navPush="OrangemoneyPage">
+          <ion-avatar item-start>
+            <img src="assets/imgs/c.png">
+          </ion-avatar>
+          <h2 class="h80">Orange Money</h2>
+          <h3 class="h80">Garant de ma securité </h3>
+          </button>
+        <button ion-item navPush="InternetorangePage">
+            <ion-avatar item-start>
+              <img src="assets/imgs/internet.png">
+            </ion-avatar>
+            <h2 class="h80">Internet</h2>
+            <h3 class="h80">j'aime etre connecté</h3>
+        </button>
+        <button ion-item navPush="InternetorangePage">
+          <ion-avatar item-start>
+            <img src="assets/imgs/internet.png">
+          </ion-avatar>
+          <h2 class="h80">Prestations</h2>
+          <h3 class="h80">mes Prestations en ligne</h3>
+      </button>
+      </ion-list>
+   <!-- <ion-card  navPush="CompteorangePage">
+        <img src="assets/imgs/compte.png" style="width: 80%;height: 50%;margin: 10%;" >
+        <ion-card-content>
+          <p>
+           Compte
+          </p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card  navPush="SouscriptionorangePage">
+        <img src="assets/imgs/souscription.png" style="width: 80%;height: 50%;margin: 10%;" >
+        <ion-card-content>
+          <p>
+          Forfait
+          </p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card  navPush="OrangemoneyPage">
+        <img src="assets/imgs/c.png" style="width: 80%;height: 50%;margin: 10%;" >
+        <ion-card-content>
+          <p>
+         Money
+          </p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card  navPush="InternetorangePage">
+        <img src="assets/imgs/internet.png" style="width: 80%;height: 50%;margin: 10%;" >
+        <ion-card-content>
+          <p>
+         Internet
+          </p>
+        </ion-card-content>
+    </ion-card>-->
+</ion-content>

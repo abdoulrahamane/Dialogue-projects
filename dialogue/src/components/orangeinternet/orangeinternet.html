@@ -1,0 +1,161 @@
+<!--
+<button ion-item class="bton"  (click)="callIT('#225#21231#')">forfait 2000 f:75MN + 75SMS / <br>  semaine </button>
+<p>Forfaits Albarka tous réseaux</p>
+<button ion-item class="bton" (click)="callIT('#225#221#')">Forfait 500f: 30MN + 15MN en 24h</button>
+<button ion-item class="bton" (click)="callIT('#225#222#')"> 1000f:Forfait illimité + 30MN en <br> 48h</button>
+<p>Forfaits internationaux</p>
+<button ion-item class="bton" (click)="callIT('#225#23212#')">Forfait Europe-Amerique-Asie:<br>10MN-1000f en 24h</button>
+<button ion-item class="bton" (click)="callIT('#225#23213#')">Forfait Europe-Amerique-Asie:<br>120MN-1000f en 15j</button>
+<button ion-item class="bton" (click)="callIT('#225#23222#')">Forfait en Afrique:10MN 2000f j </button>  
+<button ion-item class="bton" (click)="callIT('#225#23223#')">Forfait 10 000:60mn 15j </button>
+#225#2121#;#123#;#225#2123#;#225#21231#;#225#222#;#225#222#;
+#225#232121#;#225#232131#;#225#232221#;#225#232231#
+-->
+ <div class="decalage" [ngSwitch]="pageName">
+  <div *ngSwitchCase="'button1ssc'">
+    Confirmation
+    <p>Confirmez-vous la souscription au forfait de 100f donnant droit à 5MN jour?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#2121#')" (click)="close()" class="oui">oui</button>
+  </div>
+  <div *ngSwitchCase="'button2ssc'">
+      Confirmation
+    <p>Confirmez-vous la souscription au forfait de 250f donnant droit à 13MN + 13SMS jour?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#123#')" (click)="close()" class="oui">oui</button>
+  </div>  
+  <div *ngSwitchCase="'button3ssc'">
+      Confirmation
+    <p>Confirmez-vous la souscription au forfait 500 f  donnant droit à 30MN + 30SMS + 30Mo jour?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#2123#')" (click)="close()" class="oui">oui</button>
+  </div>
+  <div *ngSwitchCase="'button4ssc'">
+      Confirmation
+      <p>Confirmez-vous la souscription au forfait de  2000 f donnant droit à 75MN + 75SMS par semaine?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#21231#')" (click)="close()" class="oui">oui</button>
+  </div>  
+  <div *ngSwitchCase="'button5ssc'">
+      Confirmation
+      <p>Confirmez-vous la souscription au forfait de 500f  donnant droit à 30MN + 15MN en 24h?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#222#')" (click)="close()" class="oui">oui</button>
+  </div>
+  <div *ngSwitchCase="'button6ssc'">
+      Confirmation
+      <p>Confirmez-vous la souscription au forfait de 1000f donnant droit à un Forfait illimité + 30MN en 48h?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#223#')" (click)="close()" class="oui">oui</button>
+  </div>  
+  <div *ngSwitchCase="'button7ssc'">
+      Confirmation
+      <p>Confirmez-vous la souscription au Forfait Europe-Amerique-Asie de 1000f donnant droit à 10MN en 24h ?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#232121#')"  (click)="close()" class="oui">oui</button>
+  </div>
+  <div *ngSwitchCase="'button8ssc'">
+      Confirmation
+      <p>Confirmez-vous la souscription au forfait Europe-Amerique-Asie de 1000f donnant droit à 120MN en 15j?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#232131#')"  (click)="close()" class="oui">oui</button>
+  </div>  
+  <div *ngSwitchCase="'button9ssc'">
+      Confirmation
+      <p>Confirmez-vous la souscription au forfait de 2000f en Afrique donnant droit à 10MN j?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#232221#')"  (click)="close()" class="oui">oui</button>
+  </div>
+  <div *ngSwitchCase="'button10ssc'">
+      Confirmation
+      <p>Confirmez-vous la souscription au forfait de 10 000f donnant droit à 60MN en 15j?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#232231#')"  (click)="close()" class="oui">oui</button>
+  </div>    
+  <!--internet orange popover
+  <button ion-item class="bton" (click)="callIT('#225#1252#')" >Pass school jour et nuit 500f </button>
+    <p>Pass jour</p>
+    <button ion-item class="bton" (click)="callIT('#225#411#')" >Pass jour 100f:20Mo </button>
+    <button ion-item class="bton" (click)="callIT('#225#412#')">Pass jour 200f:50Mo </button>
+    <p>Pass semaine</p>
+    <button ion-item class="bton" (click)="callIT('#225#421#')">Pass semaine 500f:200Mo </button>
+    <button ion-item class="bton" (click)="callIT('#225#422#')" >Pass semaine 1000f:450Mo </button> 
+    <p>Pass mois</p> 
+    <button ion-item class="bton" (click)="callIT('#225#431#')" >Pass mois 5000f:2.5Go </button>
+    <button ion-item class="bton" (click)="callIT('#225#432#')">Pass mois 15000f:9Go</button>
+    <button ion-item class="bton" (click)="callIT('#225#433#')" >Pass mois 30000f:20Go</button> 
+  
+  #225#1252#
+  #225#41122#
+  #225#41222#
+  #225#42122#
+  #225#42222#
+  #225#43122#
+  #225#43222#
+  #225#43322#
+  -->
+  <div *ngSwitchCase="'button1intor'">
+    Confirmation
+    <p>Confirmez-vous la souscription au forfait Pass school de 500f donnant droit à 900M0 nuit et 100Mo jour?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#131#')"  (click)="close()" class="oui">oui</button>
+  </div>  
+  <div *ngSwitchCase="'button2intor'">
+    Confirmation
+    <p>Confirmez-vous la souscription au forfait Pass jour de 100f donnant droit à 20Mo?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#41122#')"  (click)="close()" class="oui">oui</button>
+  </div>
+  <div *ngSwitchCase="'button3intor'">
+    Confirmation
+    <p>Confirmez-vous la souscription au forfait Pass jour de 200f donnant droit à 50Mo?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#41222#')" (click)="close()" class="oui">oui</button>
+  </div>  
+  <div *ngSwitchCase="'button4intor'">
+      Confirmation
+      <p>Confirmez-vous la souscription au forfait Pass semaine de 500f donnant droit à 250Mo?</p>
+      <button  (click)="close()" class="non">non</button>
+      <button (click)="callIT('#225#42122#')"   (click)="close()" class="oui">oui</button>
+    </div>
+  <div *ngSwitchCase="'button5intor'">
+    Confirmation
+    <p>Confirmez-vous la souscription au forfait Pass semaine de 1000f donnant droit à 500Mo?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#42222#')" (click)="close()" class="oui">oui</button>
+  </div>  
+  <div *ngSwitchCase="'button6intor'">
+    Confirmation
+    <p>Confirmez-vous la souscription au forfait Pass mois de 5 000f donnant droit à 4Go?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#43122#')" (click)="close()" class="oui">oui</button>
+  </div>
+  <div *ngSwitchCase="'button7intor'">
+    Confirmation
+    <p>Confirmez-vous la souscription au forfait de Pass mois 10 000f donnant droit à 10Go?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#43222#')"   (click)="close()" class="oui">oui</button>
+  </div>  
+  <div *ngSwitchCase="'button8intor'">
+    Confirmation
+    <p>Confirmez-vous la souscription au forfait Pass mois de 20 000f donnant droit à 20Go?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT('#225#43322#')" (click)="close()" class="oui">oui</button>
+  </div>
+  <!-- orangemoneytransfert popover
+  
+  --> 
+  <div *ngSwitchCase="'button1transcom'">
+    Confirmation
+    <p>Confirmez-vous le transfert du montant de {{btn1}} au numéro {{btn2}} ?</p>
+    <button  (click)="close()" class="non">non</button>
+    <button (click)="callIT2()"  (click)="close()" class="oui">oui</button>
+  </div>
+    <div *ngSwitchCase="'button1transom'">
+      Confirmation
+      <p>Confirmez-vous le transfert d'orange money du montant de {{btn1}} au numéro {{btn2}} ?</p>
+      <button  (click)="close()" class="non">non</button>
+      <button (click)="callIT3()"  (click)="close()" class="oui">oui</button>
+    </div>  
+     
+</div>

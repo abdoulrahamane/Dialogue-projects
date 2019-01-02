@@ -1,0 +1,56 @@
+<!-- Generated template for the PopoverComponent component -->
+<div>
+    <div class="decalage" [ngSwitch]="pageName">
+      <div *ngSwitchCase="'nigertrans'">
+        Confirmation
+        <p>Confirmez-vous le transfert de credit du montant de {{btn1}} au numéro {{btn2}} ?</p>
+          <button  (click)="close()" class="non">non</button>
+          <button (click)="callITc()" (click)="close()" class="oui">oui</button>
+      </div>
+      <!--souscription niger
+      <button ion-item class="bton"  (click)="callIT('*150*62005*1#')">forfait SMS illimité 24h</button>
+      <button ion-item class="bton"  (click)="callIT('*150*62006*1#')">forfait internet illimité 24h</button>
+      <button ion-item class="bton"  (click)="callIT('*150*62007*1#')">forfait appel illimité 24h</button>
+      <button ion-item class="bton"  (click)="callIT('*150*62005*1#')">Activation du forfait Yan <br> makaranta</button>
+    *150*62005*1#;*150*62006*1#;*150*62007*1#;*150*62005*1#  
+    -->
+      <div *ngSwitchCase="'button1sscnigt'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait SMS illimité 24h ?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*150*62005*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'button2sscnigt'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait internet illimité 24h?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*150*62006*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'button3sscnigt'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait forfait appel illimité 24h?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*150*62007*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'button4sscnigt'">
+        Confirmation
+        <p>Confirmez-vous l'Activation du forfait Yan <br> makaranta?</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*150*62005*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <!--internet 
+       <button ion-item class="bton" (click)="callIT('*150*62006*1')" >forfait internet illimité 24h</button>
+      -->
+      <div *ngSwitchCase="'button1internig'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait internet illimité 24h</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*150*62006*1#')" (click)="close()" class="oui">oui</button>
+      </div>
+      <div *ngSwitchCase="'button2internig'">
+        Confirmation
+        <p>Confirmez-vous la souscription au forfait internet illimité 24h</p>
+        <button  (click)="close()" class="non">non</button>
+        <button (click)="callIT('*150#')" (click)="close()" class="oui">oui</button>
+  </div>
+  

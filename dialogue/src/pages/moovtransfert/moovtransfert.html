@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar color="dernierv">
+    <ion-title>Moov flooz</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+ 
+  <!-- <button ion-item class="bton" (click)="callIT('#144#331#')">abonement canal+</button>
+  <button ion-item class="bton" (click)="callIT('#144#332#')">abonement IROKO +</button>
+  <button ion-item class="bton" (click)="callIT('#144#333#')">Tele star</button>
+  <button ion-item class="bton" (click)="callIT('#144#334#')">Gani gaz</button>
+  <button ion-item class="bton" (click)="callIT('#144#511#')">BOA </button>
+  <button ion-item class="bton" (click)="callIT('#144#5121#')">S'inscrire à ecobank  </button>
+  <button ion-item class="bton" (click)="callIT('#144#5122#')">S'inscrire à orabank  </button>
+  <button ion-item class="bton" (click)="callIT('#144#63#')">Mon solde orange money</button>
+  -->
+  <!--<button ion-item class="bton" navPush="MoovflooztransferPage">transfert moov flooz</button>
+  *155#;*157*2#;*157*3#;*157*5#
+  *157*6#;*157*7#;*157*4*2#;*157*4*4#
+  *157*4*5#;*157*4*1#;*157*4*3#
+  -->
+  <button ion-item class="bton" (click)="presenttoast1()" (click)="callIT('*155#')">Moov flooz</button>
+  <button ion-item class="bton" (click)="presenttoast2()" (click)="callIT('*157*2#')">Retrait d'argent</button>
+  <button ion-item class="bton" (click)="presenttoast3()" (click)="callIT('*157*3#')">Achetez du credit</button>
+  <button ion-item class="bton" (click)="presenttoast4()" (click)="callIT('*157*5#')">Achat du credit</button>
+  <button ion-item class="bton" (click)="presenttoast5()" (click)="callIT('*157*6#')">Mon compte</button>
+  <button ion-item class="bton" (click)="presenttoast6()" (click)="callIT('*157*7#')">Nos produits et services</button>
+  <p>Paiement facture</p>
+  <button ion-item class="bton" (click)="presenttoast7()" (click)="callIT('*157*4*2#')">moov pospaid </button>
+  <button ion-item class="bton" (click)="presenttoast8()" (click)="callIT('*157*4*4#')">Telestart </button>
+  <button ion-item class="bton"  (click)="presenttoast9()"(click)="callIT('*157*4*5#')">Canal/Iroko+</button>
+  <button ion-item class="bton" (click)="presenttoast10()" (click)="callIT('*157*4*1#')">Paiement de facture nigelec</button>
+  <button ion-item class="bton" (click)="presenttoast11()" (click)="callIT('*157*4*3#')">Paiement de facture SEEN </button>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-menu  [content]="content" [class]="selectedtheme">
+ 
+  <ion-content class="bg-color">
+    <div class="imgs">
+      <img src="assets/imgs/logoavce.png">
+    </div>
+    <ion-list no-lines>
+        <button  ion-item   (click)="onNavigate(accueilPage)">
+          <ion-icon name="bulb" class="h80"  item-start></ion-icon>
+          <p class="h80">Astuce</p>
+        </button><br>
+    <!--  <button ion-item icon-start (click)="onNavigate(urgencePage)" (click)="showInterstitialAd()">
+        <ion-icon name="share"></ion-icon>
+        Urgence
+      </button>-->
+        <button ion-item (click)="onNavigate(networkinfoPage)" >
+          <ion-icon name="aperture" class="h80"  item-start></ion-icon>
+          <p class="h80">info puce et telephone</p> 
+        </button><br>
+        <button ion-item (click)="onNavigate(prestationsPage)">
+          <ion-icon name="cart" class="h80"  item-start></ion-icon>
+          <p class="h80">Prestations</p>  
+        </button><br>
+        <!--<button ion-item (click)="onNavigate(qualitePage)">
+          <ion-icon name="more" class="h80"  item-start></ion-icon>
+          <p class="h80">Qualité du signal</p>  
+        </button><br> -->
+        <button ion-item (click)="onNavigate(regularShare())">
+          <ion-icon name="share" class="h80"  item-start></ion-icon>
+          <p class="h80">Partager à un(e) ami(e)</p>  
+        </button><br>
+        <button ion-item (click)="onNavigate(parametrePage)">
+          <ion-icon name="more" class="h80"  item-start></ion-icon>
+          <p class="h80">Paramètres</p>  
+        </button><br>      
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-nav [root]="tabsPage" #content [class]="selectedtheme"></ion-nav>

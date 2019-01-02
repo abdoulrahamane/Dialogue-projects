@@ -1,0 +1,49 @@
+page-moovtransfer {
+    .toolbar{
+      
+        color: #000;
+    }
+    .toolbar-md-niger 
+    .bar-button-clear-md, 
+    .toolbar-md-niger 
+    .bar-button-default-md, 
+    .toolbar-md-niger 
+    .bar-button-outline-md, 
+    .toolbar-md-niger 
+    .toolbar-title-md
+    {
+        color: #000;
+
+    }
+
+    .non{
+        color:#fefefe;
+        background-color: #00ae64;
+        width: 40%;
+        padding: 5%;
+    }
+    .oui{
+        color: #fefefe;
+        left: 100%;
+        margin-left: 50%;
+        background-color: #00ae64!important;
+        width: 40%;
+        padding: 5%;
+    }
+    .decalage{
+        width: 98%;
+        height: 9%;
+        background-color: #00ae64!important;
+        margin-left: 1%;
+        color:  #fff;
+    }
+    .border{
+        border: 1px black solid;
+        border-radius: 21px 20px;
+    }
+    .deplace{
+        position: relative;
+        margin-top: 2%;
+    }
+
+}

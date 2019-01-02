@@ -1,0 +1,65 @@
+<ion-header>
+    <ion-navbar color="dernierv">
+        <button ion-button menuToggle (click)="onToggleMenu()">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Niger telecoms</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="slide">
+        <ion-slides pager="true" parallax="true" (click)="showInterstitialAd()" >
+          <ion-slide >
+            <img src="assets/imgs/niger.gif" >
+          </ion-slide>
+          <ion-slide >
+            <img src="assets/imgs/images.jpg" >
+          </ion-slide>
+        </ion-slides>
+      </div>
+      <ion-list>
+        <button ion-item  navPush="NigerforfaiinternetPage">
+          <ion-avatar item-start>
+            <img src="assets/imgs/compte.png">
+          </ion-avatar>
+          <h2 class="h80">Mon Compte</h2>
+          <h3 class="h80">je gere mon compte </h3>
+        </button>
+        <button ion-item navPush="NigerforfaismPage">
+          <ion-avatar item-start>
+            <img src="assets/imgs/souscription.png">
+          </ion-avatar>
+          <h2 class="h80">Forfait</h2>
+          <h3 class="h80">mon forfait et moi </h3>
+        </button>
+        <button ion-item navPush="NigerforfappelPage">
+            <ion-avatar item-start>
+              <img src="assets/imgs/internet.png">
+            </ion-avatar>
+            <h2 class="h80">Internet</h2>
+            <h3 class="h80">j'aime etre connecté</h3>
+        </button>
+      </ion-list>
+   <!--   <div class="copt">
+    <ion-card  navPush="NigerforfaiinternetPage" >
+        <img src="assets/imgs/compte.png"  >
+        <ion-card-content>
+          <p>
+         Compte
+          </p>
+        </ion-card-content>
+      </ion-card>
+    <ion-card  navPush="NigerforfaismPage">
+        <img src="assets/imgs/souscription.png"  >
+        <ion-card-content>
+          <p>
+          Forfait
+         </p>
+        </ion-card-content>
+    </ion-card>
+  </div>
+  <button ion-item class="bton"  navPush="NigerforfappelPage"> 
+    <img src="assets/imgs/internet.png" style="width: 150px !important;height:50px !important;position: relative !important; " >
+    <p class="p2" style="position: relative !important;bottom: 5px !important;">Internet</p>
+  </button>-->
+</ion-content> 

@@ -1,0 +1,36 @@
+page-orangetransfert {
+    
+    .toolbar{
+  
+    }
+
+    .non{
+        color:#fefefe;
+        background-color: #00ae64!important;
+        width: 40%;
+        padding: 5%;
+    }
+    .oui{
+        color: #fefefe;
+        left: 100%;
+        margin-left: 50%;
+        background-color: #00ae64!important;
+        width: 40%;
+        padding: 5%;
+    }
+    .decalage{
+        width: 98%;
+        height: 9%;
+        background-color: #00ae64!important;
+        margin-left: 1%;
+        color:  #000;
+    }
+    .deplace{
+        position: relative;
+        margin-top: 2%;
+    }
+    .border{
+        border: 1px black solid;
+        border-radius: 21px 20px;
+    }
+}

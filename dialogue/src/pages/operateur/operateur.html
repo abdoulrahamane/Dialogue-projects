@@ -1,0 +1,58 @@
+<!--
+  Generated template for the OperateurPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="verte">
+    <ion-title >Operateur</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <p>appel moi</p>
+  <button ion-button (click)="launchDialer('0022780040170')">Call Abdoulrahamane</button>
+  <button ion-button (click)="launchDialers('0022780070170')">Call Abdoulrahamane Ali</button>
+  <p>transfert de credit ussd </p>
+   <ion-item>
+      <ion-label floating >Montan à envoyer</ion-label>
+      <ion-input type="number" [(ngModel)] ="phoneNumber"></ion-input><br><br><br>
+    </ion-item>
+    <ion-item>
+      <ion-label floating >code secret</ion-label>
+      <ion-input type="number" [(ngModel)] ="phoneNumber1"></ion-input><br><br><br>
+    </ion-item>
+    <ion-item>
+      <ion-label floating >code secret</ion-label>
+      <ion-input type="number" [(ngModel)] ="phoneNumber2"></ion-input><br><br><br>
+    </ion-item>
+   
+  <ion-fab bottom right>
+    <button ion-fab  (click)="callIT()">
+      <ion-icon name="call"></ion-icon>
+    </button>
+
+  </ion-fab>
+  
+  <button (click)="callIT('#225#125')">
+      <ion-icon name="Call"></ion-icon>
+      call ussd orange
+    </button>
+  <button ion-button icon-only (click)="presentPopover()">
+      <ion-icon name="more"></ion-icon>
+    </button>
+  <p>audio</p>
+  <audio controls src="assets/imgs/audio1.mp3"></audio>
+  <p>promotion</p>
+  <img src="assets/imgs/nt prom.jpg" alt="orange promotion ">
+  <p>geolocalisation</p>
+  <a href="https://www.google.com/search?q=niger+telecom&npsic=0&rflfq=1&rldoc=1&rlha=0&rllag=13511925,2086273,2358&tbm=lcl&sa=X&ved=0ahUKEwi4to7F-JbcAhVRQ8AKHR_cAm0QtgMISA#rlfi=hd:;si:;mv:!1m3!1d22710.597323554088!2d2.1127904500000003!3d13.511616499999999!2m3!1f0!2f0!3f0!3m2!1i417!2i281!4f13.1;tbs:lrf:!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2">geolocalisation</a>
+<p>site web</p>
+<a href="http://www.nigertelecoms.ne/">Niger telecoms site web</a>
+
+
+</ion-content>

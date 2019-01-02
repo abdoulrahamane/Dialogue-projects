@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar color="dernierv">
+    <ion-title >Compte</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content> 
+  <button ion-item class="bton" navPush="MoovtransferPage">transfert moov</button>
+  <button ion-item class="bton" (click)="presenttoast1()" (click)="callIT('*100#')">Consultation de solde</button>
+  <button ion-item class="bton"(click)="presenttoast2()" (click)="callIT('*888*1*2*1#')">Consultation de solde intenet</button>
+  <button ion-item class="bton" (click)="presenttoast3()"(click)="callIT('*515#')">Consultation des offres</button>
+  <button ion-item class="bton" (click)="presenttoast4()"(click)="callIT('*300#')">sos credit</button>
+  <button ion-item class="bton" (click)="presenttoast5()" (click)="callIT('888')">Appeler le service client</button>
+  <button ion-item class="bton" (click)="presenttoast6()" (click)="callIT('*888#')">Consultation de forfait internet</button>
+  <button ion-item class="bton"  (click)="presenttoast7()"(click)="callIT('*102*0000#')">Pour avoir un mot de passe <br> de transfert</button>
+  <button ion-item class="bton" (click)="presenttoast8()" (click)="callIT('*102#')">Pour changer son mot <br>  de  passe de transfert</button>
+</ion-content>

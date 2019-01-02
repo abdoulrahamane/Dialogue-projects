@@ -1,0 +1,24 @@
+<!--
+  Generated template for the AirtelcomptePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dernierv">
+    <ion-title>Compte</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <button ion-item class="bton" navPush="AirteltransfertPage">transfert de crédit</button>
+  <button ion-item class="bton" (click)="presenttoast1()"(click)="callIT('*137#')">Consultation de solde</button>
+  <button ion-item class="bton" (click)="presenttoast8()"(click)="callIT('*137*104#')">Consultation de bonus</button>
+  <button ion-item class="bton" (click)="presenttoast2()"(click)="callIT('*436*6*1#')">consultation solde MKoudi</button><!--mot de pass input-->
+  <button ion-item class="bton" (click)="presenttoast3()" (click)="callIT('121')">Appeler le service client</button>
+  <button ion-item class="bton" (click)="presenttoast4()" (click)="callIT('*137*1004#')">Consultation de solde <br> internet</button>
+  <button ion-item class="bton" (click)="presenttoast5()" (click)="callIT('*412*1*1#')">Credit SOS 100f</button>
+  <button ion-item class="bton" (click)="presenttoast6()" (click)="callIT('*412*1*2#')">Credit SOS 200f</button>
+  <button ion-item class="bton"(click)="presenttoast7()" (click)="callIT('*412*1*3#')">Credit SOS 500f</button>
+ <!-- <button ion-item class="bton" (click)="callIT('')">modifier mon code de transfert</button>-->
+ <!--transfert de credit code ussd -->
+</ion-content>
